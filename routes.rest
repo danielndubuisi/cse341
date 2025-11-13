@@ -5,6 +5,35 @@ GET http://localhost:8080/contacts
 ### Get one contact
 GET http://localhost:8080/contacts/690a27b7ae0d056e6868bafb
 
+### Create a contact
+POST http://localhost:8080/contacts HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "firstName": "Bright",
+    "lastName": "Chigozie",
+    "email": "goziebright@gmail.com",
+    "favoriteColor": "beige",
+    "birthday": "11/04/2000"
+}
+
+### Update a contact
+PUT http://localhost:8080/contacts/690a27b7ae0d056e6868bafb HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "firstName": "David",
+    "lastName": "Mensah",
+    "email": "david.mensah@example.com",
+    "favoriteColor": "Burnt Orange",
+    "birthday": "1991-09-23"
+}
+
+### Delete a contact
+DELETE http://localhost:8080/contacts/690a27b7ae0d056e6868bafb
+
 
 // PRODUCTION
 ### Get all contacts
@@ -12,3 +41,12 @@ GET https://cse341-web-service-wq7m.onrender.com/contacts
 
 ### Get one contact
 GET https://cse341-web-service-wq7m.onrender.com/contacts/690a27b7ae0d056e6868bafb
+
+### Create a contact
+POST https://cse341-web-service-wq7m.onrender.com/contacts
+
+### Update a contact
+PUT https://cse341-web-service-wq7m.onrender.com/contacts/690a27b7ae0d056e6868bafb
+
+### Delete a contact
+DELETE https://cse341-web-service-wq7m.onrender.com/contacts/690a27b7ae0d056e6868bafb

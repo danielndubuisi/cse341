@@ -1,23 +1,35 @@
 {
-  "name": "cse341",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "start:dev": "nodemon server.js"
-  },
-  "author": "Daniel Ndubuisi",
-  "license": "MIT",
-  "description": "",
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "mongodb": "^6.20.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+    "name": "cse341",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "start:dev": "nodemon server.js",
+        "swagger-autogen": "node swagger.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    },
+    "author": "Daniel Ndubuisi",
+    "license": "MIT",
+    "description": "",
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
+        "express": "^5.1.0",
+        "mongodb": "^6.20.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.1",
+        "eslint": "^9.39.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.4",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.6.2",
+        "swagger-autogen": "^2.23.7",
+        "swagger-ui-express": "^5.0.1"
+    }
 }
